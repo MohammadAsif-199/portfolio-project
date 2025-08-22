@@ -1,0 +1,136 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styled name top-left */
+#name {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #34495e;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Section styling */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* About Me Section */
+#about img {
+  width: 150px;
+  border-radius: 75px;
+  float: left;
+  margin-right: 20px;
+  border: 3px solid #2c3e50;
+}
+#about h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+#about p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Skills Section */
+#skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+.skill-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Projects Section */
+#projects .project {
+  margin-bottom: 20px;
+}
+#projects h3 {
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+/* Recommendations Section */
+#recommendations ul {
+  list-style-type: none;
+  padding: 0;
+}
+#recommendations li {
+  background: #ecf0f1;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Form and button */
+#newRecomForm {
+  margin-top: 20px;
+}
+#newRecomForm input, #newRecomForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+#newRecomForm button {
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#newRecomForm button:hover {
+  background-color: #f39c12;
+}
+
+/* Home icon styling */
+#homeIcon {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  width: 30px;
+  cursor: pointer;
+}
