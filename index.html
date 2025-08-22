@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Achukatla Mohammad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="name">Achukatla Mohammad</div>
+
+<img id="homeIcon" src="images/home.png" alt="Home Icon" title="Home" onclick="scrollToTop()" />
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#recommendations">Recommendations</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <img src="images/profile.jpg" alt="Achukatla Mohammad Profile" />
+  <p>Hello! I am Achukatla Mohammad, a passionate web developer with a keen interest in frontend and backend technologies. I enjoy building clean and efficient web applications using the latest tools and frameworks. Currently, I am focused on enhancing my skills in Java backend development, full stack programming, and creating meaningful projects that solve real-world problems.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-item">
+    <img src="images/html5.svg" alt="HTML5 Logo" />
+    <span>HTML5</span>
+  </div>
+  <div class="skill-item">
+    <img src="images/css3.svg" alt="CSS3 Logo" />
+    <span>CSS3</span>
+  </div>
+  <div class="skill-item">
+    <img src="images/javascript.svg" alt="JavaScript Logo" />
+    <span>JavaScript</span>
+  </div>
+  <div class="skill-item">
+    <img src="images/java.svg" alt="Java Logo" />
+    <span>Java</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Bank Management System</h3>
+    <p>A Java-based console application that manages bank accounts, transactions, and generates detailed reports with CRUD functionality.</p>
+  </div>
+  <div class="project">
+    <h3>Portfolio Website</h3>
+    <p>A fully responsive portfolio website built using HTML, CSS, and JavaScript to showcase projects, skills, and professional experience.</p>
+  </div>
+  <div class="project">
+    <h3>Online Quiz Application</h3>
+    <p>A web application to create and take quizzes with timer functionality and scoring, built with JavaScript and backend APIs.</p>
+  </div>
+</section>
+
+<section id="recommendations">
+  <h2>Recommendations</h2>
+  <ul id="recomList">
+    <li><strong>Priya Sharma:</strong> "Achukatla is a highly dedicated developer with a great eye for detail."</li>
+    <li><strong>Ravi Kumar:</strong> "Reliable and always delivers quality work on time."</li>
+    <li><strong>Neha Singh:</strong> "Has excellent communication skills and a strong willingness to learn."</li>
+  </ul>
+
+  <form id="newRecomForm" onsubmit="addRecommendation(event)">
+    <h3>Add a Recommendation</h3>
+    <input type="text" id="recomName" placeholder="Your Name" required />
+    <textarea id="recomText" rows="3" placeholder="Your Recommendation" required></textarea>
+    <button type="submit">Submit Recommendation</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
